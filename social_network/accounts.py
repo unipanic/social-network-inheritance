@@ -12,7 +12,6 @@ class User(object):
         self.posts.append(post)
 
     def get_timeline(self):
-        # Cambie el nombre a get_timeline
         posts = []
         for user in self.following:
             posts += user.posts
